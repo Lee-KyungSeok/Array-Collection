@@ -28,10 +28,9 @@ public class CollectionStudy {
 						// 삭제하면 다음 데이터들이 앞으로 한칸씩 이동해서 빈공간을 채운다.
 		
 	}
+	// 타입<제네릭타입> 변수이름; //<- 제네릭타입은 클래스만 가능
 	public void checkGeneric() {
 		// 제네릭을 사용하는 방법
-		// 타입<제네릭타입> 변수이름; //<- 제네릭타입은 클래스만 가능
-		//ArrayList<String> list = new ArrayList<>();
 		
 		// list.add(123); 타입이 맞지 않는다. Generic을 빼면 가능(빼면 Object로 받아드림)
 		// ArrayList list = new ArrayList(); 를 하면 Object를 받으므로 가능
@@ -68,6 +67,7 @@ public class CollectionStudy {
 		set.add("Hello"); //중복된 값
 		set.add("dfdf");
 		
+		
 		//삭제
 		set.remove("dfdf");
 		
@@ -77,7 +77,6 @@ public class CollectionStudy {
 		 * 		System.out.println(item);
 		 * }
 		 */
-		
 		//set은 iterator 를 달아서 순서대로 처리해 줄 수 있다. 마치 list처럼
 		Iterator<String> iterator = set.iterator();
 		while(iterator.hasNext()) {
@@ -97,7 +96,6 @@ public class CollectionStudy {
 		//조회
 		System.out.println(map.get("key01"));
 		
-		//map은 반복문 불가능
 		//맵을 반복문으로 처리하기
 		Set<String> keys = map.keySet();
 		for(String key : keys) {

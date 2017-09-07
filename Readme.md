@@ -83,10 +83,74 @@ list.add(1, new Item()); // 1번부터 이후의 아이템 index를 하나씩 �
 list.remove(1); // index가 1번째인 값을 삭제
 ```
 
+※ 제네릭
+>* 타입<제네릭타입> 변수이름; 과 같이 사용
+```java
+ArrayList<String> list = new ArrayList<>();
+ArrayList<Item> list = new ArrayList<>();
+```
+>* 제네릭을 쓰지 않으면 타입을 Object로 받아들이게 된다.
+```java
+ArrayList list = new ArrayList();
+list.add(123);
+list.add("Hello");
+list.add(new Item());
+list.add(new Student());
+
+System.out.println(list.get(3)); //-> 주소값을 받아들임
+```
+
 2. __Set__ : 중복값을 허용하지 않는 동적 객체 배열
+>* 선언
+```java
+HashSet<String> set = new HashSet<>();
+```
+>* 입력
+```java
+set.add("Hello");
+set.add("Good to see you");
+set.add("Hello"); //중복된 값으로 저장되지 않는다.
+```
+>* 조회 : get이 없으므로 iterator 혹은 향상된 for문 사용
+```java
+//iterator
+Iterator<String> iterator = set.iterator();
+while(iterator.hasNext()) {
+  System.out.println(iterator.next()); //object형으로 리턴이 된다.
+
+// 향상된 for문
+for(String item : set){
+	System.out.println(item);
+}
+```
+>* 삭제
+```java
+set.remove("Hello");
+```
+
 
 3. __Hash__ : Key, Value로 구성된 동적 객체 배열
-
+>* 선언
+```java
+HashMap<String, Integer> map = new HashMap<>(); //String을 key로 Integer를 Value로 설정
+```
+>* 입력
+```java
+map.put("key01",123456);
+map.put("key02",1234561234);
+```
+>* 조회
+```java
+System.out.println(map.get("key01")); //key값이 key01인 value를 가져옴
+```
+>* 수정
+```java
+map.replace("key01",1234);
+```
+>* 삭제
+```java
+map.replace("key01");
+```
 
 
 ## 참고 문제
