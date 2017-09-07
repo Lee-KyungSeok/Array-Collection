@@ -32,14 +32,28 @@ class ObjectArray {
 }
 
 class Item{
-	private String myName = "지코";
+	private String myName = "홍길동";
 	public String getMyName(){
 		return myName;
 	}
 }
 ```
 
-2. __dd__
+2. __객체들의 배열__
+![](https://github.com/Lee-KyungSeok/Array-Collection/blob/master/picture/array1.PNG)
+> 문자열의 주소가 해당 객체를 참조한다.
+
+3. __이차원(다중) 배열__
+> 2차원 이상의 배열을 2차원 이상의 구조를 갖는 배열이다. 따라서 2차원 이상 길이를 명시해서 인스턴스를 생성하며 배열에 접근할 때에도 위치정보를 정확히 명시해서 접근하게 된다.
+![](https://github.com/Lee-KyungSeok/Array-Collection/blob/master/picture/array2.PNG)
+> 다중 배열의 초기화는 다음과 같이 한다.
+
+```java
+int[][] arr1 = new int[7][2]
+
+int[][] arr={{1,2,3,4}, {5,6,7,8}, {9,10,11,12}};
+```
+
 
 ## Collection
 List / Set / Hash
