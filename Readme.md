@@ -58,8 +58,7 @@ int[][] arr={{1,2,3,4}, {5,6,7,8}, {9,10,11,12}};
 
 ## Collection
 List / Set / Hash
-1. __List__
-</br> index를 포함하는 동적 객체 배열
+1. __List__ : index를 포함하는 동적 객체 배열
 >* 선언 : 일반 객체와 동일
 ```java
 ArrayList list = new ArrayList();
@@ -76,7 +75,7 @@ list.get(0); // index가 0번째인 값을 가져옴
 >* 수정
 ```java
 list.set(1, new Item()); // 1번 index의 item이 새로 생성된 new item으로 대체
-list.add(1, new Item()); // <-1번부터 이후의 아이템 index를 하나씩 증가시키고 자신이 1번으로 삽입 (배열의 크기가 변경됨)
+list.add(1, new Item()); // 1번부터 이후의 아이템 index를 하나씩 증가시키고 자신이 1번으로 삽입 (배열의 크기가 변경됨)
 ```
 >* 삭제
 ```java
@@ -84,11 +83,9 @@ list.add(1, new Item()); // <-1번부터 이후의 아이템 index를 하나씩 
 list.remove(1); // index가 1번째인 값을 삭제
 ```
 
-2. __Set__
-</br> 중복값을 허용하지 않는 동적 객체 배열
+2. __Set__ : 중복값을 허용하지 않는 동적 객체 배열
 
-3. __Hash__
-</br>Key, Value로 구성된 동적 객체 배열
+3. __Hash__ : Key, Value로 구성된 동적 객체 배열
 
 
 
