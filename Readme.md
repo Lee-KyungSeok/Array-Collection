@@ -46,7 +46,7 @@ class Item{
 
 3. __이차원(다중) 배열__
 > 2차원 이상의 배열을 2차원 이상의 구조를 갖는 배열이다. 따라서 2차원 이상 길이를 명시해서 인스턴스를 생성하며 배열에 접근할 때에도 위치정보를 정확히 명시해서 접근하게 된다.
-![](https://github.com/Lee-KyungSeok/Array-Collection/blob/master/picture/array2.png)
+> ![](https://github.com/Lee-KyungSeok/Array-Collection/blob/master/picture/array2.png)
 > 다중 배열의 초기화는 다음과 같이 한다.
 
 ```java
@@ -59,7 +59,37 @@ int[][] arr={{1,2,3,4}, {5,6,7,8}, {9,10,11,12}};
 ## Collection
 List / Set / Hash
 1. __List__
-> ddd
+</br> index를 포함하는 동적 객체 배열
+>* 선언 : 일반 객체와 동일
+```java
+ArrayList list = new ArrayList();
+```
+>* 입력
+```java
+list.add(new Item()); // 0번 index로 생성
+list.add(new Item()); // 1번 index로 생성
+```
+>* 조회
+```java
+list.get(0); // index가 0번째인 값을 가져옴
+```
+>* 수정
+```java
+list.set(1, new Item()); // 1번 index의 item이 새로 생성된 new item으로 대체
+list.add(1, new Item()); // <-1번부터 이후의 아이템 index를 하나씩 증가시키고 자신이 1번으로 삽입 (배열의 크기가 변경됨)
+```
+>* 삭제
+```java
+// 삭제하면 다음 데이터들이 앞으로 한칸씩 이동해서 빈공간을 채운다.
+list.remove(1); // index가 1번째인 값을 삭제
+```
+
+2. __Set__
+</br> 중복값을 허용하지 않는 동적 객체 배열
+
+3. __Hash__
+</br>Key, Value로 구성된 동적 객체 배열
+
 
 
 ## 참고 문제
