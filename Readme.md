@@ -3,7 +3,7 @@ Array 및 Collection 개념
 
 
 ## Array
-배열 / 이차배열 / 다중 배열
+배열 / 다중 배열
 1. __배열의 선언__
 >* 배열을 생성하기 위해서는 배열을 선언한다.
 >* int long 등은 기본적으로 '0'이 초기화 된다.
@@ -40,12 +40,13 @@ class Item{
 ```
 
 2. __객체들의 배열__
+
 ![](https://github.com/Lee-KyungSeok/Array-Collection/blob/master/picture/array1.PNG)
 > 문자열의 주소가 해당 객체를 참조한다.
 
 3. __이차원(다중) 배열__
 > 2차원 이상의 배열을 2차원 이상의 구조를 갖는 배열이다. 따라서 2차원 이상 길이를 명시해서 인스턴스를 생성하며 배열에 접근할 때에도 위치정보를 정확히 명시해서 접근하게 된다.
-![](https://github.com/Lee-KyungSeok/Array-Collection/blob/master/picture/array2.PNG)
+![](https://github.com/Lee-KyungSeok/Array-Collection/blob/master/picture/array2.png)
 > 다중 배열의 초기화는 다음과 같이 한다.
 
 ```java
