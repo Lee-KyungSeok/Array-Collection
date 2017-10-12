@@ -152,6 +152,44 @@ map.replace("key01",1234);
 map.replace("key01");
 ```
 
+---
+
+## 참고 코드
+- palindromeRearranging 문제 (코드파이트)
+
+```java
+boolean palindromeRearranging(String inputString) {
+    boolean check =true;
+    int count=0;
+    String[] member = inputString.split("");
+    HashMap<String, Integer> checks = new HashMap<>();
+
+    for(String item : member){
+        if(checks.containsKey(item)){
+            checks.put(item,checks.get(item)+1);
+        } else {
+            checks.put(item,1);
+        }
+    }
+
+    Iterator<String> iterator = checks.keySet().iterator();
+    while(iterator.hasNext()){
+        String key = (String) iterator.next();
+        int value = checks.get(key);
+        if(value%2==1){
+            count++;
+            if(count>1){
+                check=false;
+                break;
+            }
+        }
+    }
+
+    return check;
+}
+```
+
+---
 
 ## 참고 문제
 Array / Collection을 활용한 문제
